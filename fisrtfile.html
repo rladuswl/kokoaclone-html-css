@@ -8,29 +8,27 @@
         height: 1000vh;
         margin: 50px;
       }
-      div {
-        width: 150px;
-        height: 150px;
-        background-color: wheat;
-        position: relative;
-      }
       span {
-        background-color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-      span:nth-child(3n + 1) {
-        background-color: teal;
+      p + span {
+        text-decoration: underline;
+        color: blue;
+      }
+      div p span {
+        color: white;
       }
     </style>
   </head>
   <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <div>
+      <p>
+        dksudskgtpdyfsktksdhdstdyfdkfjskfksjfkksdkn dkfndskfnskfnksdfd.
+        <span>inside</span>
+      </p>
+      <span>hello</span>
+    </div>
   </body>
 </html>
