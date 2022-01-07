@@ -13,22 +13,25 @@
         padding: 5px;
         border-radius: 10px;
       }
-      p + span {
-        text-decoration: underline;
-        color: blue;
+      input {
+        border: 1px solid wheat;
       }
-      div p span {
-        color: white;
+
+      input:required {
+        border-color: tomato;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
       }
     </style>
   </head>
   <body>
     <div>
-      <p>
-        dksudskgtpdyfsktksdhdstdyfdkfjskfksjfkksdkn dkfndskfnskfnksdfd.
-        <span>inside</span>
-      </p>
-      <span>hello</span>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
     </div>
   </body>
 </html>
